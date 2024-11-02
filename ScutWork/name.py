@@ -3,7 +3,7 @@ import asyncio
 
 async def name_scraper(name):
     # Start a new Chrome instance
-    driver = await uc.start(browser="firefox", no_sandbox=True)
+    driver = await uc.start(browser="firefox")
 
     # Navigate to Google
     page = await driver.get("https://google.com")
